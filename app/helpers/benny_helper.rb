@@ -1,0 +1,2 @@
+module BennyHelper
+end

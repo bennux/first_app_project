@@ -1,0 +1,13 @@
+#by Benny Schulz [*BENNUX*](http://www.bennux.com)
+
+# Ruby on Rail Tutoral: first application
+
+this is the first application for [*Ruby on Rails Tutorial: Learn Rails by 
+Example*](http://railstutorial.org/)
+
+	1) fixed the "No route matches [GET] "/" error by changing/adding a line in the "routes.rb":
+
+        #root :to => "benny#hello"
+
+	2) changed the content of the defined variables in benny_data.rb from strings ("benny", "federal way") 
+	   to the actual variables and passing them using "attr_accessor" 
