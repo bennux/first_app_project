@@ -2,6 +2,7 @@ FirstApp::Application.routes.draw do
 
 	root :to => "benny#hello"
 
+	get "benny/hello" => "benny#hello"
 	# get "/benny/hello(.:format)" => "benny#hello"
 
   

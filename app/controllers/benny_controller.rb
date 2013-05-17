@@ -1,18 +1,20 @@
 class BennyController < ApplicationController
 
-	#attr_accessor :name, :home
-
   def hello
-  
-	#@myvariable = "this is the variable"
+  	@myvariable = BennyData.new
 	
-	#@myvariable = 2515342
-	
-	@myvariable = BennyData.new
-	
-	@myvariable.name = "gordon"
-	
-	@myvariable.home = "shoreline"
+    # myvariable in its default state will have
+    # name = "Unknown Person"
+    # home = "Nowhereville"
+
+    # Set the values based on input params array
+    if params[:name]
+      @myvariable.name = params[:name]     
+    end
+    
+    if params[:home]
+      @myvariable.home = params[:home]     
+    end
 	
   end
   
